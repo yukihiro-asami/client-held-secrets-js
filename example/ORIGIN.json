@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/yukihiro-asami/rainfrog-project",
+  "commit": "949c7ebcef9f93d909a62e363714458368bbde23",
+  "sourceHashes": {
+    "vendor/rainfrog/core/auth/browser/client.js": "cbb9fb9b1844dfffa636a957b31a4efc235714e38160dbf3352b518c22afd2d3",
+    "vendor/rainfrog/core/auth/browser/login-view.js": "3bda996b3a2efd74fe513c94bfc3927af31e548079bba86f99748ac937ef99f9",
+    "vendor/rainfrog/core/auth/browser/storage.js": "99c467fbca5115d884c831e085b08e026c543eece8805ea2c2e1045757b92fb9",
+    "vendor/rainfrog/core/auth/server/authority.js": "3230234fd087f486ca2701f586a762c54d1ef962730904e0d186053b85b7f86f",
+    "vendor/rainfrog/core/auth/server/public-key.js": "596e078b9e71585d00fe8ccf12482b19779894eedaffd9d3a46bfc3ee443b686",
+    "vendor/rainfrog/core/auth/shared/wire.js": "8c52ee70a8932acbf205ffb4cd8267c6eb32521e2adf5dfaa2eae860db07bf13",
+    "vendor/rainfrog/core/http/server/application.js": "14833b33b452dde3e265304eedf80707dab8b8b5545ed9c9958971bffc67cd45",
+    "secret-service.js": "6df4075faeb069f00a07d18207a597854b67dd035705f0ffc043cf549a81392a",
+    "secret-wire.js": "196cfc2ba9940fcb047b0c96f868aab236a71eede917ddf219c233dd64cc6576",
+    "secret-keys.js": "5603afc96939768dbf878e9a18d41302bc0d4700d496487d86b60e456ccd41ce",
+    "browser/secret-crypto.js": "16813e91d458b2a5882f514364e5207284dc862cfeea43a17464d6ff2860fde1",
+    "browser/secret-storage.js": "f0ae861245407447c73a26632991b707b96d3304f0ff5ce6ed4237a4394d64d7",
+    "browser/secret-view.js": "71abb1ef235c7ee3224506227845d8473c76018e8dd2fcdd43f4f3f3e21d858c",
+    "browser/common.js": "644d0be23551637b61dd841b171c83171285629eeff24993ba8d498e001ceace",
+    "browser/tokens.css": "dd9127858378b7dd3316baf96441f816c3195fbb5d1c3beff7c2dde6c509e545",
+    "browser/style.css": "5b904f080988d22321a707ea07f2a410bd935985c7fb568266aa2f17875b982a"
+  },
+  "note": "Snapshots of authentication core are unchanged. Secret components were adapted; see README."
+}

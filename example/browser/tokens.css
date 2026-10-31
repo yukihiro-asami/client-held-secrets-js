@@ -1,0 +1,78 @@
+/* ============================================================
+   Design tokens — rainfrog-js UI library
+   ============================================================ */
+:root {
+  /* Surface — pure gray, structural only */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f7f8;
+  --color-bg-sidebar: #fafafa;
+  --color-border: #e6e6e7;
+
+  /* Text — hierarchy */
+  --color-text: #1a1a1c;
+  --color-text-soft: #6b6b70;
+  --color-text-muted: #b8b8bb;
+
+  /* Brand — logo only, never on page surfaces.
+       Two colours live as a set inside the rainfrog-work SVG;
+       no CSS surface, text, button, or icon may use them. */
+  --color-brand: #66a04f; /* frog + "rainfrog" */
+  --color-brand-blue: #4064b2; /* "work" */
+
+  /* Interactive — amalab_3 family (clickable + active) */
+  --color-link: #0a73db;
+  --color-link-hover: #095fb5;
+  --color-link-soft: #e0eeff;
+
+  /* Danger — amalab_3 family (destructive / warnings) */
+  --color-danger: #db0a0a;
+  --color-danger-soft: #ffe0e3;
+
+  /* Avatar palette — 8 functional pairs.
+       Assignment is hash(email) % 8.  Not for brand expression. */
+  --avatar-01-bg: #fbe6e6;
+  --avatar-01-fg: #7a3838; /* red    */
+  --avatar-02-bg: #fbeadc;
+  --avatar-02-fg: #7a5128; /* orange */
+  --avatar-03-bg: #eef2d8;
+  --avatar-03-fg: #5d6b25; /* olive  */
+  --avatar-04-bg: #e0eee0;
+  --avatar-04-fg: #2f6b3a; /* green  */
+  --avatar-05-bg: #d9ecf2;
+  --avatar-05-fg: #1f627a; /* cyan   */
+  --avatar-06-bg: #ddddf4;
+  --avatar-06-fg: #2f3d8c; /* blue   */
+  --avatar-07-bg: #ecdcf0;
+  --avatar-07-fg: #663a80; /* purple */
+  --avatar-08-bg: #f4dce5;
+  --avatar-08-fg: #803a51; /* pink   */
+
+  /* Typography */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', system-ui,
+    sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Radius */
+  --radius: 8px;
+  --radius-sm: 6px;
+  --radius-full: 999px;
+
+  /* Spacing — 4px scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Shadow */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+  /* Layout widths (per-page may override) */
+  --sidebar-w: 240px;
+  --rightpanel-w: 320px;
+  --preview-w: 380px;
+}

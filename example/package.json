@@ -1,0 +1,24 @@
+{
+  "name": "client-held-secrets-reference",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.22.1"
+  },
+  "scripts": {
+    "init:keys": "node initialize.js",
+    "init:db": "node database.js",
+    "start": "node server.js webcrypto",
+    "start:custom": "node server.js custom",
+    "test": "node --test test/*.test.js",
+    "test:db": "node --test test/db/*.test.js",
+    "test:browser": "node test/browser.js"
+  },
+  "dependencies": {
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "playwright": "1.62.0"
+  }
+}

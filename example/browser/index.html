@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  /><title>Client-Held Secrets | Reference</title
+  ><link rel="stylesheet" href="/tokens.css" /><link rel="stylesheet" href="/style.css" />
+  <script type="module" src="/page.js"></script>
+  <body>
+    <header><strong>rainfrog</strong><span>秘密情報の保存と一時利用 · 参照実装</span></header>
+    <main>
+      <h1 id="title">秘密情報の保存と一時利用</h1>
+      <p id="suite"></p>
+      <p class="note">架空番号だけで保存・一時利用・署名付き記録を確認します。</p>
+      <section id="login"></section>
+      <article id="own-card" hidden>
+        <p class="eyebrow">自分の情報 · このブラウザに保存</p>
+        <h2>試験用カード</h2>
+        <p>自分の架空のカード番号を保管します。実際のカード情報は入力しないでください。</p>
+        <p id="card-state"></p>
+        <form id="card-form">
+          <label for="card-number">架空のカード番号</label>
+          <input
+            id="card-number"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            maxlength="40"
+            placeholder="例：4242 4242 4242 4242"
+            required
+          />
+          <p class="note">
+            このブラウザに暗号化して保存します。サイトデータを消去すると、番号の再入力が必要です。
+          </p>
+          <button id="card-save" class="primary" type="submit">ブラウザに保存</button>
+        </form>
+        <div class="card-actions">
+          <button id="card-use" type="button">番号の形式確認に使う</button>
+          <button id="card-delete" class="danger" type="button">保存したカードを削除</button>
+        </div>
+        <div id="card-pending" hidden>
+          <p>利用結果の確認待ちです。確認中はカードの変更・削除を行いません。</p>
+          <div class="card-actions">
+            <button id="card-result" type="button">前回の結果を確認</button>
+            <button id="card-retry" type="button" hidden>同じ要求を再送</button>
+            <button id="card-abandon" type="button" hidden>確認待ちを終了</button>
+          </div>
+        </div>
+        <section id="card-confirm" class="card-confirm" aria-label="カード操作の確認" hidden>
+          <p id="card-confirm-text"></p>
+          <div class="card-actions">
+            <button id="card-cancel" type="button">キャンセル</button>
+            <button id="card-accept" type="button">確認して実行</button>
+          </div>
+        </section>
+        <p id="card-message" role="status" aria-live="polite"></p>
+        <p id="card-receipt"></p>
+      </article>
+      <p id="message" role="status"></p>
+    </main>
+  </body>
+</html>
